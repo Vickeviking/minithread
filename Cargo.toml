@@ -1,0 +1,21 @@
+[package]
+name = "minithread"
+version = "0.1.0"
+edition = "2021"
+description = "A minimal green threads implementation for educational purposes"
+license = "MIT"
+keywords = ["threads", "async", "green-threads", "experimental"]
+categories = ["concurrency"]
+
+[dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+
+[[example]]
+name = "pingpong"
+path = "examples/pingpong.rs"
+
+[[test]]
+name = "smoke"
+path = "tests/smoke.rs"
